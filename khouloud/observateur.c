@@ -19,7 +19,7 @@ int modifier( char * filename, int id, struct observateur nouv )
     FILE * f2=fopen("nouv.txt", "w");
     if(f!=NULL && f2!=NULL)
     {
-        while(fscanf(f,"%d %s %s %s %s %s %s %s %d\n",&o.id,o.nom,o.prenom,o.nationalite,o.genre,o.gouvernorat,o.appartenance,o.choix_liste,&o.nbv))!=EOF)
+        while(fscanf(f,"%d %s %s %s %s %s %s %s %d\n",&o.id,o.nom,o.prenom,o.nationalite,o.genre,o.gouvernorat,o.appartenance,o.choix_liste,&o.nbv)!=EOF)
         {
             if(o.id== id)
             {
@@ -78,5 +78,16 @@ observateur  chercher(char * filename,int id)
     fclose(f);
     if(tr==0)
         o.id=-1;
+int observateur(char *filename,int id)
+{
+  nbo=0;
+  while (id)
+  {
+    nbo=nbo+1;
+    printf("Le nb des observateurs est : %d ",nb0);
+   }
+  printf("Observateur introuvable");   
+}
     return o;
+
 }
