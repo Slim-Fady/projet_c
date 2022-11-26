@@ -1,6 +1,6 @@
-prog:reclamation.o main.o
-	gcc reclamation.o main.o -o prog
-main.o:main.c
-	gcc -c main.c
-reclamation.o: reclamation.c
-	gcc -c reclamation.c
+programme:observateur.o mains.o
+	gcc observateur.o mains.o -o programme
+mains.o:mains.c
+	gcc -c mains.c
+observateur.o: observateur.c
+	gcc -c observateur.c

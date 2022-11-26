@@ -6,10 +6,10 @@ typedef struct observateur
 int id;
 char nom [20];
 char prenom [20];
-char nationalite [20];
+char nationalite [30];
 char genre [20];
 char gouvernorat [20];
-char appartenance [20];
+char appartenance [50];
 char choix_liste [20];
 int nbv;
 } observateur;
