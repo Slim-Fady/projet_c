@@ -2106,7 +2106,7 @@ Observateur </property>
 	      <property name="width_request">424</property>
 	      <property name="height_request">48</property>
 	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Sélectionner la liste où tu souhaites diposer une réclamation : </property>
+	      <property name="label" translatable="yes">Sélectionner la liste où tu souhaites diposer votre réclamation : </property>
 	      <property name="use_underline">False</property>
 	      <property name="use_markup">False</property>
 	      <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -7014,42 +7014,6 @@ liste 9</property>
       </child>
 
       <child>
-	<widget class="GtkEventBox" id="eventbox18">
-	  <property name="width_request">112</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="visible_window">True</property>
-	  <property name="above_child">False</property>
-
-	  <child>
-	    <widget class="GtkLabel" id="nouv_nationalite">
-	      <property name="width_request">112</property>
-	      <property name="height_request">40</property>
-	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Nationalité  :</property>
-	      <property name="use_underline">False</property>
-	      <property name="use_markup">False</property>
-	      <property name="justify">GTK_JUSTIFY_LEFT</property>
-	      <property name="wrap">False</property>
-	      <property name="selectable">False</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xpad">0</property>
-	      <property name="ypad">0</property>
-	      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	      <property name="width_chars">-1</property>
-	      <property name="single_line_mode">False</property>
-	      <property name="angle">0</property>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">312</property>
-	  <property name="y">120</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkEventBox" id="eventbox19">
 	  <property name="width_request">48</property>
 	  <property name="height_request">48</property>
@@ -7403,6 +7367,42 @@ votre inscription  :</property>
 	  <property name="y">400</property>
 	</packing>
       </child>
+
+      <child>
+	<widget class="GtkEventBox" id="eventbox68">
+	  <property name="width_request">112</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="visible_window">True</property>
+	  <property name="above_child">False</property>
+
+	  <child>
+	    <widget class="GtkLabel" id="nouv_nationalite">
+	      <property name="width_request">112</property>
+	      <property name="height_request">40</property>
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">Nationalité  :</property>
+	      <property name="use_underline">False</property>
+	      <property name="use_markup">False</property>
+	      <property name="justify">GTK_JUSTIFY_LEFT</property>
+	      <property name="wrap">False</property>
+	      <property name="selectable">False</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xpad">0</property>
+	      <property name="ypad">0</property>
+	      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	      <property name="width_chars">-1</property>
+	      <property name="single_line_mode">False</property>
+	      <property name="angle">0</property>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">312</property>
+	  <property name="y">128</property>
+	</packing>
+      </child>
     </widget>
   </child>
 </widget>
@@ -7611,7 +7611,7 @@ votre inscription  :</property>
 	      <property name="width_request">136</property>
 	      <property name="height_request">48</property>
 	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Veuillez souhaitez :</property>
+	      <property name="label" translatable="yes">Vous souhaitez :</property>
 	      <property name="use_underline">False</property>
 	      <property name="use_markup">False</property>
 	      <property name="justify">GTK_JUSTIFY_LEFT</property>
