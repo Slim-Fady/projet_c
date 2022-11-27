@@ -1,0 +1,64 @@
+#include"stat.h"
+#include<stdio.h>
+
+int gagnant(int nbhabtant, tab t[], char *liste, int gagnant[])
+{
+	int ng=0, reste, quot, j=-1, nb=0, x ;
+	int tab[9];
+
+	if (nbhabtant<=5000)
+		ng=10;
+	else
+		if ((nbhabtant>=5001)&&(nbhabtant<=10000))
+			ng=12;
+	else
+		if ((nbhabtant>=10001)&&(nbhabtant<=25000))
+			ng=16;
+	else
+		if ((nbhabtant>=25001)&&(nbhabtant<=50000))
+			ng=22;
+	else
+		if ((nbhabtant>=50001)&&(nbhabtant<=100000))
+			ng=30;
+	else
+		if ((nbhabtant>=100001)&&(nbhabtant<=500000))
+			ng=40;
+	else
+		if (nbhabtant>=500001)
+			ng=60;
+	
+	reste= ng % 9;
+	quot= ng /9;
+	FILE f*=fopen(liste_electorale, "r");
+
+	while( (fscanf(f,"%s %s %d %d %d %d \n",l.nom, l.type, &l.identifiant, & l.identifiant_1,& l.identifiant_2, & l.identifiant_3)!=EOF)) && (nb<=quot) )
+	{
+		for (i=0; i<quot; i++)
+			if (l.identifiant == t[i].idliste)
+			{
+				nb+=1;
+				j++;
+				gagnant[j]=l.identifiant_1;
+				j++;
+				gagnant[j]=l.identifiant_2;
+				j++;
+				gagnant[j]=l.identifiant_3;
+				j++;
+			}
+
+		i=quot;
+		if (l.identifiant == t[i].idliste)
+		{
+			nb+=1;
+			tab[0]= l.identifiant1; tab[1]= l.identifiant2; tab[2]= l.identifiant3;
+			for (x=0; x<reste; x++)
+			{ 
+				j++;
+				gagnant[j]=tab[x];
+
+			}
+
+	}
+
+	return ng;
+}
